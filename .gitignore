@@ -1,0 +1,14 @@
+/vendor/delegate/act
+/vendor/delegate/adm
+/vendor/delegate/etc
+/vendor/delegate/log
+/vendor/delegate/tmp
+/vendor/privoxy/logs/privoxy.log
+/vendor/tor/cached-certs
+/vendor/tor/cached-microdesc-consensus
+/vendor/tor/cached-microdescs
+/vendor/tor/cached-microdescs.new
+/vendor/tor/control_auth_cookie
+/vendor/tor/state
+/vendor/tor/tasklist
+/.env
