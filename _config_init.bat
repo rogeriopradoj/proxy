@@ -49,9 +49,9 @@ git config --global http.proxy %HTTP_PROXY%  >nul 2>&1
 git config --global https.proxy %HTTP_PROXY%  >nul 2>&1
 echo.
 for /f %%i in ('git config --get http.proxy') do set _INIT_TEMP=%%i
-echo "   - HTTP_PROXY : " %_INIT_TEMP%
+echo "   - git http.proxy : " %_INIT_TEMP%
 for /f %%i in ('git config --get https.proxy') do set _INIT_TEMP=%%i
-echo "   - HTTPS_PROXY: " %_INIT_TEMP%
+echo "   - git https.proxy: " %_INIT_TEMP%
 echo.
 echo ".Ok"
 
