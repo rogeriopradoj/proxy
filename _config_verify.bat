@@ -9,12 +9,6 @@ echo "   - all_proxy: " %all_proxy%
 echo.
 echo "   - no_proxy : " %no_proxy%
 echo.
-echo "    git http.proxy + https.proxy"
-echo.
-git config --get http.proxy
-echo.
-git config --get https.proxy
-echo.
 
 echo.
 PAUSE

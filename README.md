@@ -216,6 +216,7 @@ Para encerrar o CNTLM, é só fechar a janela do CMD onde ele foi iniciado.
 
 - Troca nomes das varíaveis de ambiente HTTP_PROXY, HTTPS_PROXY e NO_PROXY para minúsculas (motivo: git aceita melhor, https://getcomposer.org/doc/03-cli.md#http-proxy-or-http-proxy e https://unix.stackexchange.com/questions/212894/whats-the-right-format-for-the-http-proxy-environment-variable-caps-or-no-ca)
 - Define variável de ambiente all_proxy
+- Remove configs específicas de git http.proxy e https.proxy, pois ele usa o variável de ambiente http_proxy minúscula
 
 ### 2017-01-24
 
