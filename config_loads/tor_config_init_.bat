@@ -16,16 +16,4 @@ echo.
 echo ".Ok"
 
 echo.
-echo "==> set http.proxy and https.proxy git global config"
-git config --global http.proxy %http_proxy%  >nul 2>&1
-git config --global https.proxy %http_proxy%  >nul 2>&1
-echo.
-for /f %%i in ('git config --get http.proxy') do set _INIT_TEMP=%%i
-echo "   - http_proxy : " %_INIT_TEMP%
-for /f %%i in ('git config --get https.proxy') do set _INIT_TEMP=%%i
-echo "   - https_proxy: " %_INIT_TEMP%
-echo.
-echo ".Ok"
-
-echo.
 PAUSE
