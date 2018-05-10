@@ -29,12 +29,12 @@ echo.==================================================================
 echo.==                           CONFIGS                            ==
 echo.==================================================================
 echo.
-echo. Você pode passar o parâmetro -y para não ser questionado e
-echo. deixar os valores padrões serão utilizados.
+echo. Vocï¿½ pode passar o parï¿½metro -y para nï¿½o ser questionado e
+echo. deixar os valores padrï¿½es serï¿½o utilizados.
 echo. 
 echo.     ^> proxy_start.bat -y
 echo. 
-echo. Observação.: A senha(Password) sempre é solicitada.
+echo. Observaï¿½ï¿½o.: A senha(Password) sempre ï¿½ solicitada.
 echo.
 echo.==================================================================
 echo.

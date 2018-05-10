@@ -1,9 +1,10 @@
 @echo off
 
 echo.
-echo "==> unset HTTP_PROXY and HTTPS_PROXY environment variables"
-REG delete HKCU\Environment /F /V HTTP_PROXY >nul 2>&1
-REG delete HKCU\Environment /F /V HTTPS_PROXY >nul 2>&1
+echo "==> unset http_proxy, https_proxy and all_proxy environment variables"
+REG delete HKCU\Environment /F /V http_proxy >nul 2>&1
+REG delete HKCU\Environment /F /V https_proxy >nul 2>&1
+REG delete HKCU\Environment /F /V all_proxy >nul 2>&1
 echo.
 echo ".Ok"
 
