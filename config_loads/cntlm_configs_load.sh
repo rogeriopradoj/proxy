@@ -4,7 +4,7 @@
 git config --global http.proxy http://127.0.0.1:3128
 git config --global https.proxy http://127.0.0.1:3128
 
-echo "Configurados proxys para o GIT:"
+echo "Configurados proxies para o GIT:"
 echo "- http.proxy  `git config --get http.proxy`" 
 echo "- https.proxy `git config --get https.proxy`" 
 echo ""
@@ -12,10 +12,13 @@ echo ""
 # Configura proxy para tudo via CLI
 export http_proxy="http://127.0.0.1:3128"
 export https_proxy="http://127.0.0.1:3128"
+export all_proxy="http://127.0.0.1:3128"
 http_proxy=http://127.0.0.1:3128
 https_proxy=http://127.0.0.1:3128
+all_proxy=http://127.0.0.1:3128
 
-echo "Configurados proxys para tudo via CLI:"
-echo "- http_proxy  $http_proxy" 
-echo "- https_proxy $https_proxy" 
+echo "Configurados proxies para tudo via CLI:"
+echo "- http_proxy  $http_proxy"
+echo "- https_proxy $https_proxy"
+echo "- all_proxy $all_proxy"
 echo ""
