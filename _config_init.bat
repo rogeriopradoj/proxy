@@ -23,30 +23,30 @@ echo.
 echo ".Ok"
 
 echo.
-echo "==> set HTTP_PROXY and HTTPS_PROXY environment variables"
-SET HTTP_PROXY=!LOCAL_PROXY_ADDRESS! >nul 2>&1
-SET HTTPS_PROXY=%HTTP_PROXY%  >nul 2>&1
-setx HTTP_PROXY %HTTP_PROXY% >nul 2>&1
-setx HTTPS_PROXY %HTTP_PROXY% >nul 2>&1
+echo "==> set http_proxy and https_proxy environment variables"
+SET http_proxy=!LOCAL_PROXY_ADDRESS! >nul 2>&1
+SET https_proxy=%http_proxy%  >nul 2>&1
+setx http_proxy %http_proxy% >nul 2>&1
+setx https_proxy %http_proxy% >nul 2>&1
 echo.
-echo "   - HTTP_PROXY : " %HTTP_PROXY%
-echo "   - HTTPS_PROXY: " %HTTPS_PROXY%
+echo "   - http_proxy : " %http_proxy%
+echo "   - https_proxy: " %https_proxy%
 echo.
 echo ".Ok"
 
 echo.
-echo "==> set NO_PROXY environment variable"
-SET NO_PROXY=!CNTLM_NO_PROXY! >nul 2>&1
-setx NO_PROXY %NO_PROXY% >nul 2>&1
+echo "==> set no_proxy environment variable"
+SET no_proxy=!CNTLM_NO_PROXY! >nul 2>&1
+setx no_proxy %no_proxy% >nul 2>&1
 echo.
-echo "   - NO_PROXY : " %NO_PROXY%
+echo "   - no_proxy : " %no_proxy%
 echo.
 echo ".Ok"
 
 echo.
 echo "==> set http.proxy and https.proxy git global config"
-git config --global http.proxy %HTTP_PROXY%  >nul 2>&1
-git config --global https.proxy %HTTP_PROXY%  >nul 2>&1
+git config --global http.proxy %http_proxy%  >nul 2>&1
+git config --global https.proxy %http_proxy%  >nul 2>&1
 echo.
 for /f %%i in ('git config --get http.proxy') do set _INIT_TEMP=%%i
 echo "   - git http.proxy : " %_INIT_TEMP%

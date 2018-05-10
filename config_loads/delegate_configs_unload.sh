@@ -10,10 +10,10 @@ echo "- https.proxy `git config --get https.proxy`"
 echo ""
 
 # Remove proxy para tudo via CLI
-unset HTTP_PROXY
-unset HTTPS_PROXY
+unset http_proxy
+unset https_proxy
 
 echo "Removidos proxys para tudo via CLI:"
-echo "- HTTP_PROXY  $HTTP_PROXY" 
-echo "- HTTPS_PROXY $HTTPS_PROXY" 
+echo "- http_proxy  $http_proxy" 
+echo "- https_proxy $https_proxy" 
 echo ""

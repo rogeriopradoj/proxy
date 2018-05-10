@@ -10,12 +10,12 @@ echo "- https.proxy `git config --get https.proxy`"
 echo ""
 
 # Configura proxy para tudo via CLI
-export HTTP_PROXY="socks5://127.0.0.1:9150"
-export HTTPS_PROXY="socks5://127.0.0.1:9150"
-HTTP_PROXY=socks5://127.0.0.1:9150
-HTTPS_PROXY=socks5://127.0.0.1:9150
+export http_proxy="socks5://127.0.0.1:9150"
+export https_proxy="socks5://127.0.0.1:9150"
+http_proxy=socks5://127.0.0.1:9150
+https_proxy=socks5://127.0.0.1:9150
 
 echo "Configurados proxys para tudo via CLI:"
-echo "- HTTP_PROXY  $HTTP_PROXY" 
-echo "- HTTPS_PROXY $HTTPS_PROXY" 
+echo "- http_proxy  $http_proxy" 
+echo "- https_proxy $https_proxy" 
 echo ""

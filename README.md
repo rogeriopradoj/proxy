@@ -1,5 +1,30 @@
 # PROXY WINDOWS (cntlm, tor e delegate)
 
+<!-- TOC -->
+
+- [PROXY WINDOWS (cntlm, tor e delegate)](#proxy-windows-cntlm-tor-e-delegate)
+    - [Resumo:](#resumo)
+    - [Base: CNTLM](#base-cntlm)
+        - [Evolução: TOR e DELEGATE](#evolução-tor-e-delegate)
+    - [Qual usar?](#qual-usar)
+    - [CNTLM: Ligando](#cntlm-ligando)
+    - [CNTLM: Desligando](#cntlm-desligando)
+    - [TOR: Ligando](#tor-ligando)
+    - [TOR: Desligando](#tor-desligando)
+    - [DELEGATE: Ligando](#delegate-ligando)
+    - [DELEGATE: Desligando](#delegate-desligando)
+    - [Changelog](#changelog)
+        - [2018-05-10](#2018-05-10)
+        - [2017-01-24](#2017-01-24)
+        - [2016-05-19](#2016-05-19)
+        - [2016-05-11](#2016-05-11)
+        - [2016-05-10](#2016-05-10)
+        - [2016-03-16](#2016-03-16)
+        - [2016-02-19](#2016-02-19)
+        - [2016-02-18](#2016-02-18)
+
+<!-- /TOC -->
+
 ## Resumo:
 
 Crie um arquivo `.env` na raiz do projeto, use como base o `.env.example` já disponível.
@@ -186,6 +211,10 @@ Para encerrar o TOR, execute o arquivo arquivo `tor_stop`.
 Para encerrar o CNTLM, é só fechar a janela do CMD onde ele foi iniciado.
 
 ## Changelog
+
+### 2018-05-10
+
+- Troca nomes das varíaveis de ambiente HTTP_PROXY, HTTPS_PROXY e NO_PROXY para minúsculas (motivo: git aceita melhor, https://getcomposer.org/doc/03-cli.md#http-proxy-or-http-proxy e https://unix.stackexchange.com/questions/212894/whats-the-right-format-for-the-http-proxy-environment-variable-caps-or-no-ca)
 
 ### 2017-01-24
 
