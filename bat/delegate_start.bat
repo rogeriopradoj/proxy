@@ -8,7 +8,7 @@ chcp 1252>nul
 setlocal EnableDelayedExpansion
 
 cd %~dp0..\vendor\delegate
-bin\con32-dg9_9_13.exe -f -P8118 SERVER=http SOCKS=127.0.0.1:9150 ADMIN="local@localhost.com"
+bin\con32-dg9_9_13.exe -f -P0.0.0.0:8118 SERVER=http SOCKS=127.0.0.1:9150 ADMIN="local@localhost.com"
 
 endlocal
 chcp %cp%>nul
