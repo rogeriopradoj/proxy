@@ -12,8 +12,8 @@ start /min "" tor.exe -f .\torrc
 goto loop
 
 :loop
-TIMEOUT /T 1
-tasklist | find "tor.exe" | find /v "redirector.exe" && goto loop
+%WINDIR%\system32\TIMEOUT /T 1
+%WINDIR%\system32\tasklist | %WINDIR%\system32\find "tor.exe" | %WINDIR%\system32\find /v "redirector.exe" && goto loop
 
 endlocal
 chcp %cp%>nul
