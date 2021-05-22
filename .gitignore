@@ -1,3 +1,4 @@
+/.env
 /vendor/delegate/act
 /vendor/delegate/adm
 /vendor/delegate/etc
@@ -11,4 +12,4 @@
 /vendor/tor/control_auth_cookie
 /vendor/tor/state
 /vendor/tor/tasklist
-/.env
+/vendor/tor/unparseable-desc
