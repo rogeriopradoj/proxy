@@ -48,8 +48,11 @@ echo ".Ok"
 
 echo.
 PAUSE
-
+goto:eof
 
 :GetEnvValue
-@FOR /F "tokens=2 delims==" %%a in (('%WINDIR%system32\find "%~1=" %ENVFILE%')) do @set %~2=%%a
+@FOR /F "tokens=2 delims==" %%a in ('%WINDIR%\system32\find "%~1=" %ENVFILE%') do @set %~2=%%a
 @goto:eof
+
+:eof
+exit
