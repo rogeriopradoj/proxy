@@ -1,11 +1,12 @@
 echo ""
-echo "    - PROXY_WINDOWS_PATH:   $env:PROXY_WINDOWS_PATH"
+"    - PROXY_WINDOWS_PATH:     {0}" -f [Environment]::GetEnvironmentVariable("PROXY_WINDOWS_PATH", "User")
 echo ""
-echo "    - http_proxy:    $env:http_proxy"
-echo "    - https_proxy:   $env:https_proxy"
-echo "    - all_proxy:     $env:all_proxy"
+"    - http_proxy:     {0}" -f [Environment]::GetEnvironmentVariable("http_proxy", "User")
+"    - https_proxy:     {0}" -f [Environment]::GetEnvironmentVariable("https_proxy", "User")
+"    - all_proxy:     {0}" -f [Environment]::GetEnvironmentVariable("all_proxy", "User")
 echo ""
-echo "    - no_proxy:      $env:no_proxy"
+"    - no_proxy:      {0}" -f [Environment]::GetEnvironmentVariable("no_proxy", "User")
+
 echo ""
 echo ""
 
