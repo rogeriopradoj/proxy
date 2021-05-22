@@ -8,6 +8,7 @@ chcp 1252>nul
 setlocal EnableDelayedExpansion
 
 set ENVFILE="%~dp0..\.env"
+set ENVFILE="%~dp0\..\.env"
 IF NOT EXIST %ENVFILE% (
     echo "Arquivo %ENVFILE% nao localizado. Dica: copie o arquivo .env.example da raiz do projeto"
     goto:eof
@@ -29,12 +30,12 @@ echo.==================================================================
 echo.==                           CONFIGS                            ==
 echo.==================================================================
 echo.
-echo. Vocï¿½ pode passar o parï¿½metro -y para nï¿½o ser questionado e
-echo. deixar os valores padrï¿½es serï¿½o utilizados.
+echo. Você pode passar o parâmetro -y para não ser questionado e
+echo. deixar os valores padrões serão utilizados.
 echo. 
 echo.     ^> proxy_start.bat -y
 echo. 
-echo. Observaï¿½ï¿½o.: A senha(Password) sempre ï¿½ solicitada.
+echo. Observação.: A senha(Password) sempre é solicitada.
 echo.
 echo.==================================================================
 echo.
@@ -96,11 +97,11 @@ echo.
 echo.==================================================================
 echo.
 
-%~dp0..\vendor\cntlm\cntlm.exe -v -d %userdomain% -u %username% -I -l !CNTLM_LISTEN! -N !CNTLM_NO_PROXY! !CNTLM_PROXY!
+%~dp0\..\vendor\cntlm\cntlm.exe -v -d %userdomain% -u %username% -I -l !CNTLM_LISTEN! -N !CNTLM_NO_PROXY! !CNTLM_PROXY!
 
 endlocal
 chcp %cp%>nul
 
 :GetEnvValue
-@FOR /F "tokens=2 delims==" %%a in (('%WINDIR%system32\find "%~1=" %ENVFILE%')) do @set %~2=%%a
+@FOR /F "tokens=2 delims==" %%a in ('%WINDIR%\system32\find "%~1=" %ENVFILE%') do @set %~2=%%a
 @goto:eof

@@ -55,4 +55,5 @@ goto:eof
 @goto:eof
 
 :eof
-exit
+rem exit
+pause
