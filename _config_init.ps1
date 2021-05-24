@@ -51,28 +51,6 @@ try {
 	echo ".Ok"
 
 	echo ""
-	echo "==> set http_proxy, https_proxy and all_proxy environment variables"
-	[Environment]::SetEnvironmentVariable("http_proxy", $conf.LOCAL_PROXY_ADDRESS, "User")
-	[Environment]::SetEnvironmentVariable("https_proxy", $conf.LOCAL_PROXY_ADDRESS, "User")
-	[Environment]::SetEnvironmentVariable("all_proxy", $conf.LOCAL_PROXY_ADDRESS, "User")
-	
-	echo ""
-	"    - http_proxy:      {0}" -f [Environment]::GetEnvironmentVariable("http_proxy", "User")
-	"    - https_proxy:      {0}" -f [Environment]::GetEnvironmentVariable("https_proxy", "User")
-	"    - all_proxy:      {0}" -f [Environment]::GetEnvironmentVariable("all_proxy", "User")
-	echo ""
-	echo ".Ok"
-
-	echo ""
-	echo "==> set no_proxy environment variable"
-	[Environment]::SetEnvironmentVariable("no_proxy", $conf.LOCAL_PROXY_ADDRESS, "User")
-	echo ""
-	"    - no_proxy:      {0}" -f [Environment]::GetEnvironmentVariable("no_proxy", "User")
-	echo ""
-	echo ".Ok"
-
-
-	echo ""
 	PAUSE
 
  $PWD  # output the current location 

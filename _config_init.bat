@@ -23,30 +23,6 @@ echo.
 echo ".Ok"
 
 echo.
-echo "==> set http_proxy, https_proxy and all_proxy environment variables"
-SET http_proxy=!LOCAL_PROXY_ADDRESS! >nul 2>&1
-SET https_proxy=%http_proxy%  >nul 2>&1
-SET all_proxy=%http_proxy%  >nul 2>&1
-setx http_proxy %http_proxy% >nul 2>&1
-setx https_proxy %http_proxy% >nul 2>&1
-setx all_proxy %http_proxy% >nul 2>&1
-echo.
-echo "   - http_proxy : " %http_proxy%
-echo "   - https_proxy: " %https_proxy%
-echo "   - all_proxy: " %all_proxy%
-echo.
-echo ".Ok"
-
-echo.
-echo "==> set no_proxy environment variable"
-SET no_proxy=!CNTLM_NO_PROXY! >nul 2>&1
-setx no_proxy %no_proxy% >nul 2>&1
-echo.
-echo "   - no_proxy : " %no_proxy%
-echo.
-echo ".Ok"
-
-echo.
 PAUSE
 goto:eof
 
